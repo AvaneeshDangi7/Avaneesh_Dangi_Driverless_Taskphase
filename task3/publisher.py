@@ -17,12 +17,12 @@ class WheelPublisher(Node):
             radius = float(input("Enter wheel radius (m): "))
 
             msg = TaskOne()
-            msg.angVel = ang_vel
+            msg.angvel = ang_vel
             msg.radius = radius
 
             self.publisher.publish(msg)
             self.get_logger().info(
-                f"Published angVel={ang_vel}, radius={radius}"
+                f"Published angvel={ang_vel}, radius={radius}"
             )
         except ValueError:
             self.get_logger().error("Enter valid numeric values.")
