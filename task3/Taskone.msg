@@ -1,2 +1,2 @@
-float32 angVel
+float32 angvel
 float32 radius
