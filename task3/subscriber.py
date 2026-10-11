@@ -11,7 +11,7 @@ class WheelSubscriber(Node):
         )
 
     def calculate_speed(self, msg):
-        speed = msg.angVel * msg.radius
+        speed = msg.angvel * msg.radius
         self.get_logger().info(
             f"Longitudinal speed = {speed:.3f} m/s"
         )
